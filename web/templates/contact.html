@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Capital Cities</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Contact Us</h1>
+        <p>Got a question or feedback? We would love to hear from you! Get in touch with us using the contact details below:</p>
+    </section>
+
+    <section>
+        <h2>Contact Information</h2>
+        <ul>
+            <li>Email: info@mathlearning.com</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Send us a Message</h2>
+        <form action="{{ url_for('index') }}" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Math Learning. All rights reserved.</p>
+    </footer>
+</body>
+</html>

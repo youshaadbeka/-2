@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Learning</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Welcome to Math Learning!</h1>
+        <p>Our website is dedicated to helping you learn mathematics. We offer a wide range of courses and resources to enhance your mathematical skills.</p>
+    </section>
+
+    <section>
+        <h2>Levels</h2>
+        <ul>
+            <li>Beginner</li>
+            <li>Intermediate</li>
+            <li>Advanced</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Certifications</h2>
+        <ul>
+            <li>Basic Mathematics Certificate</li>
+            <li>Intermediate Mathematics Certificate</li>
+            <li>Advanced Mathematics Certificate</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Math Learning. All rights reserved.</p>
+    </footer>
+</body>
+</html>
